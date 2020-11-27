@@ -1,24 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     <title>World GDP</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <span class="navbar-text"><h5 style="color:white;">World GDP</h5></span>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
     <span class="navbar-toggler-icon"></span>
-  </button>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="dashboard"><h6>Dashboard</h6></a>
       </li>
@@ -35,8 +37,8 @@
   </div>
 </nav>
 <div class="container mt-5">
-	    <p><b>About:</b></p>
-	    <p class="text-dark bg-light p-3">This is Django based GDP Predictor Web Application which uses Machine Learning Linear regression method for predicting GDP of countries.</p>
+	    <p><b>Prediction:</b></p>
+	    <p class="text-dark bg-light p-3">This is Django based GDP Predictor Web Application which uses Machine Learning Random Forest Regressor method for predicting GDP of countries.</p>
 	    <br/>
 	</div>
   </body>

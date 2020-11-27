@@ -52,5 +52,9 @@ def getGDP(req):
        'Climate_label':climate_label},ignore_index = True)
     model = WorldGdpConfig.randomForest
     pred = model.predict(df)
-    gdp = 'gdp of '+ country + ' is '+str(round(pred[0],2))
-    return HttpResponse(gdp)
+    #gdp = 'gdp of '+ country + ' is '+str(round(pred[0],2))
+    context = dict()
+    context['gdp'] = str(round(pred[0],2))
+    context['country'] = country
+    return render(req,'world_gdp/pred_output.html',context)
+   
