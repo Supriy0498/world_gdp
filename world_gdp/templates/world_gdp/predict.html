@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script> 
+    $(function(){
+      $("#includedContent").load("index.html"); 
+    });
+    </script>
+    <title>Predict | World GDP</title>
+  </head>
+  <body>
+  <div id="includedContent"></div>
+	<form class="form" action="gdp/" method="POST" >
+    {% csrf_token %}
+	  <div class="container center-divison text-center">
+	    <label class="container mx-auto mt-3 " for="movie_name"><h2>Countries of the World</h2></label>
+	    <input type="text" class="form-control" id="movie_name" placeholder="Enter the Country Name" name = "country" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter the population" name = "population" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter area(sq. km)" name = "area" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter population density" name = "population_density" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Coastline (coast/area ratio)" name = "coast" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Literacy (%)" name = "literacy" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Net migration" name = "migration" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Infant mortality (per 1000 births)" name = "mortality" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Phones (per 1000)" name = "phones" required="">
+	      <input type="text" class="form-control" id="movie_name" placeholder="Enter Arable (%)" name = "arable" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Crops (%)" name = "crop" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Other (%)" name = "other" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Birthrate" name = "birthrate" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Deathrate" name = "deathrate" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Region_label" name = "region_label" required="">
+        <input type="text" class="form-control" id="movie_name" placeholder="Enter Climate_label" name = "climate_label" required="">
+        <button style="margin:15px;padding:15" type="submit" class="btn btn-primary">Get Recommendations</button>
+	    <br/>
+	  </div>
+	</form>
+  </body>
+</html>
