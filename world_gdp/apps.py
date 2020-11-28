@@ -5,3 +5,4 @@ import pandas as pd
 class WorldGdpConfig(AppConfig):
     name = 'world_gdp'
     randomForest = pickle.load(open('/home/worldgdp/world_gdp/world_gdp/model/finalized_model.sav', 'rb'))
+    #randomForest = pickle.load(open('D:\\world_gdp\\world_gdp\\model\\finalized_model.sav', 'rb'))
